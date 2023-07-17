@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1067cb33f8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index.css">
-    <title>Taller 0 Maquetacion Responsive</title>
+    <link rel="stylesheet" href="css/indexm.css">
+    <script defer  src="js/carrusel.js"></script>
+    <title>Document</title>
 </head>
 <body>
     
@@ -13,16 +14,20 @@
         <nav>
             <div class="logo">
                 <img src="img/Hotelia horizontal blanco.svg">
-            </div>     
+                <i class="fa-solid fa-bars" id="ham"></i>
+            </div>
+            
             <div class="menu">
                 <a href="index.html" class="item">Inicio</a>
-                <a href="#contenedor3" class="item">Ubícanos</a>
-                <a href="#contenedor4" class="item">Opiniones</a>
-                <a href="#" class="Iniciar"><i class="fa-solid fa-user"></i> Iniciar Sesión</a>
+                <a href="ubicanos.html" class="item">Ubícanos</a>
+                <a href="opiniones.html" class="item">Opiniones</a>
+                <hr class="menu-hr" noshade="">
+                <a href="login.html" class="Iniciar"><i class="fa-solid fa-user"></i> Iniciar Sesión</a>
             </div>
         </nav>
     </header>
-    <main>
+
+    <main class="main">
 
         <div class="reserva">
             <p>R</p>
@@ -54,8 +59,8 @@
                     ponemos a tu disposicion una oferta gastronomica tan sofisticada como saludable
                     a base de productos locales, cargados de lo mejor de la tradicion colombiana.
                 </p>
+                <img src="img/Hotelia negro vertical.svg" alt="">
             </div>
-            <img src="img/Hotelia negro vertical.svg" alt="">
         </div>
         
         
@@ -71,12 +76,12 @@
                     <i class="fa-solid fa-bed"></i>
                     <p>Lorem ipsum dolor</p>
                 </div>
-                <div class="feature feature-blue">
-                    <i class="fa-solid fa-wifi"></i>
-                    <p>Lorem ipsum dolor</p>
-                </div>
                 <div class="feature feature-black">
                     <i class="fa-solid fa-dumbbell"></i>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="feature feature-blue">
+                    <i class="fa-solid fa-wifi"></i>
                     <p>Lorem ipsum dolor</p>
                 </div>
             </div>
@@ -129,17 +134,21 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, temporibus nobis quas dolor repellendus a voluptate enim explicabo facere neque voluptatum repudiandae</p>
                 </div>
             </div>
+            <ul class="puntos">
+                <div class="punto"></div>
+                <div class="punto activo"></div>
+                <div class="punto"></div>
+            </ul>
         </div>
 
     </main>
+    
     <footer>
-
         <div class="texto">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium est sit nostrum porro animi doloremque sequi sed cumque itaque ab impedit sunt ducimus.</p>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-square-twitter"></i>
+            
         </div>
+        <hr>
         <div class="ubi">
             <div class="ubi2">
                 <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
@@ -150,9 +159,16 @@
                 <p>+57 601 4567899</p>
             </div>
         </div>
+        <hr>
         <div class="politicas">
             <p>Politicas de privacidad</p>
             <p>Politicas de privacidad</p>
+        </div>
+        <hr>
+        <div class="redes">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
         </div>
     </footer>
 
