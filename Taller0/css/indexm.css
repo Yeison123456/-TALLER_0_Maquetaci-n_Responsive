@@ -116,7 +116,7 @@ nav a:hover{
     background-color: var(--Magenta);
     width: 5%;
     height: 150px;
-    margin-left: 53.8%;
+    margin-left: 94.4%;
     margin-top: 20%;
     position: fixed;
     align-items: center;
@@ -263,6 +263,8 @@ nav a:hover{
 
 #contenedor4 .encabezado{
     display: flex;
+    width: 100%;
+    overflow: hidden;
 }
 
 .encabezado img{
@@ -276,10 +278,16 @@ nav a:hover{
     color: #ffffff;
 }
 
+.Comentarioss{
+    width: 100%;
+    background-color: #0B3860;
+    margin-top: -15%;
+    overflow: hidden;
+}
+
 .comentarios{
     width: 240%;
 
-    margin-top: -15%;
 
     display: flex;
     flex-flow: row  nowrap;
