@@ -4,6 +4,7 @@ const men=document.querySelector(".menu")
 const main=document.querySelector(".main")
 
 ham.addEventListener('click',() =>{
+    //console.log("entro");
     men.classList.remove('menu');
     men.classList.add('menu2'); 
 })
@@ -33,6 +34,24 @@ punto.forEach( ( cadaPunto , i) =>{
         punto[i].classList.add('activo')
 
     })
+})
+
+//Registrar
+
+const abrir=document.getElementById("abriNodal")
+const cerrar=document.getElementById("cerrar")
+const nodal=document.querySelector(".nodal2")
+
+
+abrir.addEventListener('click',() =>{
+    //console.log("entro");
+    nodal.classList.remove('nodal2');
+    nodal.classList.add('nodal'); 
+})
+
+cerrar.addEventListener('click',() =>{
+    nodal.classList.remove('nodal');
+    nodal.classList.add('nodal2'); 
 })
 
 

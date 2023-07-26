@@ -3,14 +3,16 @@
     padding: 0;
 }
 
-@media screen and (min-width: 769px){
-
 body{
     background-image: url(../img/login/bg-login.png);
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;   
+    background-size: cover;
+    background-attachment: fixed;  
 }
+
+@media screen and (min-width: 769px){
+
 
 .contenedor{
     background-color: rgba(28, 146, 224, 0.5);
@@ -75,12 +77,7 @@ body{
 @media screen and (max-width: 769px){
 
     
-body{
-    background-image: url(../img/login/bg-login.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 300px;  
-}
+
 
 .contenedor{
     background-color: rgba(28, 146, 224, 0.5);

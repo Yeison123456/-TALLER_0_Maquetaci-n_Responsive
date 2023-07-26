@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+body{
+    background-image: url(../img/login/bg-login.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
 @media screen and (min-width: 769px){
     body{
         display: grid;
@@ -11,10 +19,6 @@
     }
 
     main{
-        background-image: url(../img/login/bg-login.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 688px;
         display: grid;
         grid-template-columns: 37.5% 25% 37.5%;
         grid-template-rows: 20% 70% 10%;
@@ -84,10 +88,6 @@
         display: grid;
         grid-template: 
         'main' auto;
-        background-image: url(../img/login/bg-login.png);
-        background-size: 250% 380%;
-        background-repeat: no-repeat;
-        background-position: center;
         width: 100%;
     }
 
