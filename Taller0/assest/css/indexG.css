@@ -79,16 +79,15 @@ h1,h2,h3,h4,h5{
 
 .menu {
     grid-area: menu;
-    display: grid;
     background-color: rgba(1, 10, 52, 0.838);
-    display: none;
+    display: grid;
 }
 
 .menu2 {
     grid-area: menu;
     display: grid;
     background-color: rgba(1, 10, 52, 0.838);
-
+    
 }
 
 .menu-hr {

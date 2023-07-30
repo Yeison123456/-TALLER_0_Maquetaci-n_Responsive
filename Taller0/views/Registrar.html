@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assest/css/registrar.css">
-    <script defer  src="../assest/js/carrusel.js"></script>
     <title>Registrar</title>
 </head>
 <body>
@@ -66,7 +65,7 @@
         </form>
     </div>
 
-    <div class="nodal">
+    <div class="nodal2">
         <div class="terminosCondiciones">
             <h1>Terminos y condiciones</h1>
             <p>Estos son los terminos del servicio 
@@ -87,4 +86,22 @@
         </div>
     </div>
 </body>
+<script>
+    const abrir=document.getElementById("abriNodal")
+const cerrar=document.getElementById("cerrarNodal")
+const nodal=document.querySelector(".nodal2")
+
+
+abrir.addEventListener('click',() =>{
+    //console.log("entro");
+    nodal.classList.remove('nodal2');
+    nodal.classList.add('nodal'); 
+})
+
+cerrar.addEventListener('click',() =>{
+    nodal.classList.remove('nodal');
+    nodal.classList.add('nodal2'); 
+})
+
+</script>
 </html>

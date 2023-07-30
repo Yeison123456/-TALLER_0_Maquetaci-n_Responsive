@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1067cb33f8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assest/css/indexG.css">
-    <script defer  src="../assest/js/carrusel.js"></script>
     <title>Index Grid</title>
+    
 </head>
 <body class="main">
     <div id="container-grid">
@@ -21,7 +21,7 @@
                 <a href="ubicanos.html" class="item">Ubícanos</a>
                 <a href="opiniones.html" class="item">Opiniones</a>
                 <hr class="menu-hr" noshade="">
-                <a href="login.html" class="Iniciar"><i class="fa-solid fa-user"></i> Iniciar Sesión</a>
+                <a href="loginGrid.html" class="Iniciar"><i class="fa-solid fa-user"></i> Iniciar Sesión</a>
             </div>
         </nav>
         <section id="banner">
@@ -148,5 +148,43 @@
             </div>
         </footer>
     </div>
+    
 </body>
+<script type="text/javaScript">
+    /*Menu*/
+const ham=document.getElementById("ham")
+const men=document.querySelector(".menu")
+const main=document.querySelector(".main")
+
+ham.addEventListener('click',() =>{
+    //console.log("entro");
+    men.classList.remove('menu');
+    men.classList.add('menu2'); 
+})
+
+main.addEventListener('click',() =>{
+    men.classList.remove('menu2');
+    men.classList.add('menu'); 
+})
+const comentarios=document.querySelector(".comentarios")
+const punto=document.querySelectorAll(".punto")
+
+
+punto.forEach( ( cadaPunto , i) =>{ 
+    punto[i].addEventListener('click',()=>{
+
+        let posi= i
+        let ope= posi * -29
+        comentarios.style.transform= `translateX(${ope}%)`
+    
+        punto.forEach(( cadaPunto, i )=>{
+
+            punto[i].classList.remove('activo')
+        })
+        punto[i].classList.add('activo')
+
+    })
+})
+
+</script>
 </html>
