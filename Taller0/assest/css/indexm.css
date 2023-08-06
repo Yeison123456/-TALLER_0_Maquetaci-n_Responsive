@@ -30,14 +30,15 @@ html{
      }
 
 
+/*Para version mobile*/
 @media screen and (max-width: 768px){
 
 .logo{
     background-color: var(--negro);
     height: 60px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /*justificar el contenido para que tengan el mismo espacio entre ellos*/
+    align-items: center;/*Centrar el contenido verticalmente*/
 }
     
 .logo img{
@@ -55,9 +56,9 @@ html{
     width: 59%;
     display: flex;
     position: fixed;
-    flex-direction: column;
+    flex-direction: column;/*Justifica el contenido en una columna*/
     align-items: center;
-    justify-content: center;  
+    justify-content: center;  /*Centra el contenido de forma horizontal*/
     animation-name: animarMenu;
     animation-duration: .5s;
     display: none;
@@ -71,8 +72,8 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;  
-    animation-name: animarMenu;
-    animation-duration: .5s;
+    animation-name: animarMenu; /*El nombre de la animnacion*/
+    animation-duration: .5s;/*Duracion de la animacion*/
 }
 
 @keyframes animarMenu{
@@ -192,7 +193,7 @@ nav a:hover{
 
 .features-description{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/*Hace un salto de linea cuando el contenido sobrepasa el limite del contenedor*/
     justify-content: space-evenly;
 }
 
@@ -408,16 +409,18 @@ footer .texto{
 }
 
 }
+
+/*Para version escritorio*/
 @media screen and (min-width: 769px){
 
     nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: var(--negro);
-        font-family: 'Marcellus', serif;
-        font-size: 1.3em;
-        padding: 1rem;
+        display: flex;/*Justifica todo el contenido en una sola linea*/
+        align-items: center;/*centra el contenido de forma vertical*/
+        justify-content: space-between;/*justifica el contenido para que tenga en mismo espacio entre ellos*/
+        background-color: var(--negro); /*Para darle un color al fonso, el color ya esta definido*/
+        font-family: 'Marcellus', serif; /*Para darle una tipo de letra*/
+        font-size: 1.3em; /*Para darle el tamaño de letra*/
+        padding: 1rem; /*Para darle una margen dentro del contenedor*/
     }
     
     .item{
@@ -425,13 +428,13 @@ footer .texto{
     }
     .menu a{
         color: var(--blanco);
-        text-decoration: none;
+        text-decoration: none;/*Para quitarle todas las decoraciones al texto*/
     }
     .Iniciar{
         background-color: var(--azuloscuro);
         padding: 0.5rem 1rem;
         color: var(--blanco);
-        border-radius: 5px;
+        border-radius: 5px;/*Para ajustar los bordes*/
         font-family: 'Marcellus', serif;
         font-size: 1em;
     }
@@ -443,7 +446,7 @@ footer .texto{
     }
 
     .logo i{
-        display: none;
+        display: none;/*Oculta el elemento y este no ocupara ningun espacio*/
     }
     
     .menu-hr{
@@ -478,7 +481,7 @@ footer .texto{
         background-color: var(--Magenta);
         width: 3%;
         height: 200px;
-        margin-left: 95%;
+        margin-left: 97%;
         margin-top: 10%;
         position: fixed;
         align-items: center;
